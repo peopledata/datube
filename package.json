@@ -30,7 +30,7 @@
       "standard": "^16.0.4"
     },
     "scripts": {
-      "test": "standard && node test/all.js",
+      "test": "standard --fix && node test/all.js",
       "test:generate": "brittle -r test/all.js test/*.js",
       "lint": "standard"
     },

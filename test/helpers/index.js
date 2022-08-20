@@ -1,4 +1,4 @@
-const daTube = require('../../')
+const DaTube = require('../../')
 
 module.exports = { swarm, destroy, toArray }
 
@@ -24,7 +24,7 @@ async function destroy (...nodes) {
 async function swarm (t, n = 32, bootstrap = []) {
   const nodes = []
   while (nodes.length < n) {
-    const node = new daTube({ bootstrap, ephemeral: false })
+    const node = new DaTube({ bootstrap, ephemeral: false })
     await node.ready()
     if (!bootstrap.length) bootstrap = [{ host: '127.0.0.1', port: node.address().port }]
     nodes.push(node)
@@ -34,7 +34,7 @@ async function swarm (t, n = 32, bootstrap = []) {
     nodes,
     bootstrap,
     createNode (opts = {}) {
-      const node = new daTube({ bootstrap, ephemeral: true, ...opts })
+      const node = new DaTube({ bootstrap, ephemeral: true, ...opts })
       nodes.push(node)
       return node
     },
