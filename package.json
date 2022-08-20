@@ -1,6 +1,6 @@
 {
   "name": "@peopledata/datube",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "End-to-end encrypted tube powered by DHT",
   "main": "index.js",
   "browser": "browser.js",
