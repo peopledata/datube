@@ -26,7 +26,7 @@ async function startBootstrapNode (port, host) {
   await node.ready()
 
   console.log('Bootstrap node bound to', node.address())
-  console.log('Fully started Hyperswarm DHT bootstrap node')
+  console.log('Fully started Datube DHT bootstrap node')
 }
 
 async function startNodes (cnt, bootstrap) {
@@ -48,5 +48,5 @@ async function startNodes (cnt, bootstrap) {
     })
   }
 
-  console.log('Fully started ' + cnt + ' Hyperswarm DHT node' + (cnt === 1 ? '' : 's'))
+  console.log('Fully started ' + cnt + ' peopleswarm DHT node' + (cnt === 1 ? '' : 's'))
 }

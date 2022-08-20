@@ -96,7 +96,7 @@ If you want to force close the node without waiting for the servers to unannounc
 
 #### `node = DHT.bootstrapper(port, host, [options])`
 
-If you want to run your own Hyperswarm network use this method to easily create a bootstrap node.
+If you want to run your own Peopleswarm network use this method to easily create a bootstrap node.
 
 ## Creating P2P servers
 
